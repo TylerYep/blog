@@ -1,7 +1,3 @@
-@charset "utf-8";
-
-// Define defaults for each variable.
-
 $base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
@@ -29,15 +25,6 @@ $on-laptop:        800px !default;
 $on-medium:        $on-palm !default;
 $on-large:         $on-laptop !default;
 
-// Use media queries like this:
-// @include media-query($on-palm) {
-//   .wrapper {
-//     padding-right: $spacing-unit / 2;
-//     padding-left: $spacing-unit / 2;
-//   }
-// }
-// Notice the following mixin uses max-width, in a deprecated, desktop-first
-// approach, whereas media queries used elsewhere now use min-width.
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
     @content;
@@ -48,9 +35,45 @@ $on-large:         $on-laptop !default;
   font-size: $base-font-size * $ratio;
 }
 
-// Import partials.
-@import
-  "minima/base",
-  "minima/layout",
-  "minima/syntax-highlighting"
-;
+// =============================================================
+// Style - imports
+// =============================================================
+@charset "UTF-8";
+@import "global/colors";
+@import "global/utilities";
+@import "global/typography";
+@import "global/syntax-highlight";
+@import "components/masthead";
+@import "components/page";
+@import "components/base";
+@import "components/layout";
+
+// =============================================================
+// Global Setup
+// =============================================================
+html {
+  position: relative;
+  min-height: 100%;
+  font-size: 18px; // 1rem == 16px
+  box-sizing: border-box;
+  min-width: 320px;
+}
+
+body {
+  margin: 0 0;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 1rem;
+  @extend .colors-default-light;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+// Content padding & width-limiting
+.content {
+  max-width: calc(700px + 2rem);
+  margin: 0 auto;
+  position: relative;
+  padding: 1rem;
+}

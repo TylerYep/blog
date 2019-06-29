@@ -1,0 +1,107 @@
+// =============================================================
+// =============================================================
+//
+// Masthead component - for page & article titles
+//
+// =============================================================
+// =============================================================
+
+
+// Only display content to screen readers
+//
+// See: http://a11yproject.com/posts/how-to-hide-content/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+// Spaced out inline navigation
+ul.inline-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    padding: 0 0;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    &::after {
+      content: ' · ';
+    }
+    &:last-child::after {
+      content: '';
+    }
+  }
+}
+
+
+// Chips are "action links" for navigation, etc.
+.chip {
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0 1rem;
+  height: 2rem;
+  line-height: 2rem;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+// global light source means all shadows are the same
+.shadow {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+// Arrows are arrows
+.arrow-down {
+  @extend .shadow;
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  background: white;
+  border-radius: 50%;
+  &:hover {
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
+  }
+  &::after {
+    content: '';
+    display: inline-block;
+    background: url(images/arrow-down.png) center no-repeat;
+    height: 3rem;
+    width: 3rem;
+    background-size: 100%;
+    opacity: 0.5;
+  }
+}
+
+.arrow-left {
+  @extend .arrow-down;
+}
+
+hr {
+  display: block;
+  border: none;
+  color: inherit;
+  height: auto;
+
+  &::before {
+    display: block;
+    content: '···';
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+}
+
+.text-right {
+  text-align: right;
+}

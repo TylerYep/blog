@@ -1,8 +1,13 @@
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="{{ "/style.css" | relative_url }}">
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+  {% if page.description %}<meta name="description" content="{{ page.description }}">
+  {% elsif page.summary %}<meta name="description" content="{{ page.summary }}">
+  {% else %}<meta name="description" content="{{ site.description }}">{% endif %}
+  <script src="//use.typekit.net/cup5bnl.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+  <link rel="stylesheet" href={{ "/style.css" | relative_url }} type="text/css">
   {%- feed_meta -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
