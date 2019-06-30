@@ -45,10 +45,6 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, %vertical-rhythm
   margin-bottom: $spacing-unit / 2;
 }
 
-main {
-  display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
-}
-
 img {
   max-width: 100%;
   vertical-align: middle;
