@@ -8,6 +8,10 @@
   margin-bottom: $spacing-unit / 2;
 }
 
+.footer-description {
+  text-align: right;
+}
+
 .contact-list, .social-media-list {
   list-style: none;
   margin-left: 0;
@@ -26,8 +30,7 @@
   padding-left: $spacing-unit / 2;
 }
 
-.footer-col-1,
-.footer-col-2 {
+.footer-col-1, .footer-col-2 {
   width: -webkit-calc(50% - (#{$spacing-unit} / 2));
   width:         calc(50% - (#{$spacing-unit} / 2));
 }
@@ -64,6 +67,7 @@
   display: table;
   box-sizing: initial;
   margin: 0 auto;
+  float: right;
   li {
     float: left;
     margin: 0 5px;
@@ -81,7 +85,7 @@
 // Grid helpers
 @media screen and (min-width: $on-large) {
   .one-half {
-    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-    width:         calc(50% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(50%);
+    width:         calc(50%);
   }
 }
