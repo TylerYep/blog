@@ -1,13 +1,33 @@
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+html {
+  position: relative;
+  min-height: 100%;
+  font-size: 18px; // 1rem == 16px
+  box-sizing: border-box;
+  min-width: 320px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+// Content padding & width-limiting
+.content {
+  max-width: calc(750px + 2rem);
+  margin: 0 auto;
+  position: relative;
+  padding: 1rem;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0;
 }
 
 body {
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-  color: $text-color;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 1rem;
+  @extend .colors-default-light;
+
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
@@ -20,19 +40,11 @@ body {
   flex-direction: column;
 }
 
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
+// Set `margin-bottom` to maintain vertical rhythm
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, %vertical-rhythm {
   margin-bottom: $spacing-unit / 2;
 }
 
-/**
- * `main` element
- */
 main {
   display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
 }
@@ -171,4 +183,101 @@ table {
   td {
     border: 1px solid $grey-color-light;
   }
+}
+
+// Only display content to screen readers
+// See: http://a11yproject.com/posts/how-to-hide-content/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+// Spaced out inline navigation
+ul.inline-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    padding: 0 0;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    &::after {
+      content: ' · ';
+    }
+    &:last-child::after {
+      content: '';
+    }
+  }
+}
+
+// Chips are "action links" for navigation, etc.
+.chip {
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0 1rem;
+  height: 2rem;
+  line-height: 2rem;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+// global light source means all shadows are the same
+.shadow {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+// Arrows are arrows
+.arrow-down {
+  @extend .shadow;
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  background: white;
+  border-radius: 50%;
+  &:hover {
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.4);
+  }
+  &::after {
+    content: '';
+    display: inline-block;
+    background: url(images/arrow-down.png) center no-repeat;
+    height: 3rem;
+    width: 3rem;
+    background-size: 100%;
+    opacity: 0.5;
+  }
+}
+
+.arrow-left {
+  @extend .arrow-down;
+}
+
+hr {
+  display: block;
+  border: none;
+  color: inherit;
+  height: auto;
+
+  &::before {
+    display: block;
+    content: '···';
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+}
+
+.text-right {
+  text-align: right;
 }

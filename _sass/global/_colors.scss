@@ -1,10 +1,9 @@
 // =============================================================
-// =============================================================
-//
 // Color Schemes - general-purpose color schemes
-//
 // =============================================================
-// =============================================================
+$text-color:       #111 !default;
+$background-color: #fdfdfd !default;
+$brand-color:      #2a7ae2 !default;
 
 $white: #FFF;
 
@@ -34,6 +33,10 @@ $brand-qrohlf: #C72800;
 $brand-qrohlf-alt: #961E00;
 $bluegray: #3f5767;
 
+$grey-color:       #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
+$orange-color:     #f66a0a !default;
 
 // Dark color scheme with a blue background
 .colors-blue-dark {
