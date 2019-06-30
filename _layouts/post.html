@@ -2,7 +2,10 @@
 layout: page
 ---
 <div class="post">
-    <section class="post-body">
-      {{ content }}
-    </section>
+  <section class="post-body">
+    {{ content }}
+  </section>
 </div>
+{%- if site.disqus.shortname -%}
+  {%- include disqus_comments.html -%}
+{%- endif -%}
