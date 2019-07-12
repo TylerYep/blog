@@ -235,7 +235,7 @@ ul.inline-nav {
 }
 
 // Arrows are arrows
-.arrow-down {
+.arrow-left {
   @extend .shadow;
   display: inline-block;
   height: 3rem;
@@ -248,7 +248,7 @@ ul.inline-nav {
   &::after {
     content: '';
     display: inline-block;
-    background: url(images/arrow-down.png) center no-repeat;
+    background: url(images/arrow-left.png) center no-repeat;
     height: 3rem;
     width: 3rem;
     background-size: 100%;
@@ -257,7 +257,7 @@ ul.inline-nav {
 }
 
 .arrow-left {
-  @extend .arrow-down;
+  @extend .arrow-left;
 }
 
 hr {
