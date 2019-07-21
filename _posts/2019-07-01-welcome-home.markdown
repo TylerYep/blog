@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Welcome Home!
-summary: Thoughts on my first popular project, and why it matters.
+summary: Why keep a blog?
 date: 2019-07-01
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
