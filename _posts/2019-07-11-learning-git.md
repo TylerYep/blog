@@ -4,7 +4,7 @@ title: Learning Git
 summary: An intro to Git, by me!
 date: 2019-07-11
 ---
-# Intro
+# Introduction
 This is a practical guide to using Git and Github - I made this tutorial because I struggled a lot when I first started learning how to use Git to save my work. So, this is the guide I wish I had when I first started using Git, and reflects my current best use cases, which are of course always growing. I hope this step-by-step story helps you manage your code better and gives you a good sense of how to navigate version control.
 
 This tutorial requires you to sign up for a Github account and download Git (there are plenty of other tutorials explaining how to do this). This tutorial also assumes you have basic knowledge of moving around using the command line.
@@ -25,7 +25,7 @@ You will now come to a landing page with your empty repository. The next step is
 
 This will create a copy of the contents of the repository onto your computer. You should see a folder on your computer with a README.md file. Now, this is an important distinction: there are now two copies of your files. One is a local version, which we will work on and make changes to. The other is an *origin* version, which exists on the Github servers. Once we make our changes to the local copy, we will push it up to the Github servers to store in our *origin*.
 
-![How Github Works](/blog/images/github-tutorial/github.webp)
+![How Github Works](/blog/images/github-tutorial/github.png)
 
 Let's make some changes to our repository. Go make some changes to README.md and add some extra files to the folder. Now, let's pretend we are now ready to save our work. First, let's see an overview of our changes. In the command line, type:
 
@@ -58,6 +58,9 @@ At this point, we've successfully made a commit, and are now ready to push our c
 (Note: this command is an abbreviation for `git push origin master`. It is often better practice to type the entire command out so you push changes to the right place!)
 
 After running this command, going back to the Github page for this repository should show your new commit!
+
+![First Commit](/blog/images/github-tutorial/first-commit.png)
+
 
 <!-- # Bigger projects
 git checkout -b branch_name
