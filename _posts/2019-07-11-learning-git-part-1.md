@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Learning Git
-summary: An intro to Git, by me!
+title: Learning Git, Part 1
+summary: A Practical Introduction to Git and Github.
 date: 2019-07-11
 ---
 # Introduction
-This is a practical guide to using Git and Github - I made this tutorial because I struggled a lot when I first started learning how to use Git to save my work. So, this is the guide I wish I had when I first started using Git, and reflects my current best use cases, which are of course always growing. I hope this step-by-step story helps you manage your code better and gives you a good sense of how to navigate version control.
+This is a practical guide to using Git and Github. I struggled a lot when I first started learning how to use Git, so this is the guide I wish I had when I first started. This guide reflects my current, constantly evolving workflow, and I hope this guide will evolve with it. I hope this step-by-step story helps you manage your code better and gives you a good sense of how to navigate version control.
 
-This tutorial requires you to sign up for a Github account and download Git (there are plenty of other tutorials explaining how to do this). This tutorial also assumes you have basic knowledge of moving around using the command line.
+This tutorial requires you to have signed up on Github and downloaded Git (there are plenty of other tutorials explaining how to do this). This tutorial also assumes you have basic knowledge of moving around using the command line.
 
 # The Beginning: Your First Project
 The first step is to create a repository on Github to contain all of your files. Think of this as a Google Drive folder - this is a space where you can upload all of your files in order to keep them up to date.
@@ -26,6 +26,7 @@ You will now come to a landing page with your empty repository. The next step is
 This will create a copy of the contents of the repository onto your computer. You should see a folder on your computer with a README.md file. Now, this is an important distinction: there are now two copies of your files. One is a local version, which we will work on and make changes to. The other is an *origin* version, which exists on the Github servers. Once we make our changes to the local copy, we will push it up to the Github servers to store in our *origin*.
 
 ![How Github Works](/blog/images/github-tutorial/github.png)
+<center><i>Quick diagram of origin vs local copy.</i></center><br>
 
 Let's make some changes to our repository. Go make some changes to README.md and add some extra files to the folder. Now, let's pretend we are now ready to save our work. First, let's see an overview of our changes. In the command line, type:
 
@@ -39,7 +40,7 @@ Now, we want to specify these are the files that we want to save our progress on
 
 `git add .`
 
-(You can also add files individually: `git add README.md`; `git add otherfiles.txt`)
+*(You can also add files individually: `git add README.md`; `git add otherfiles.txt`)*
 
 ![Git Add](/blog/images/github-tutorial/git-add.png)
 
@@ -55,18 +56,12 @@ At this point, we've successfully made a commit, and are now ready to push our c
 
 `git push`
 
-(Note: this command is an abbreviation for `git push origin master`. It is often better practice to type the entire command out so you push changes to the right place!)
+*(Note: this command is an abbreviation for `git push origin master`. It is often better practice to type the entire command out so you push changes to the right place!)*
 
 After running this command, going back to the Github page for this repository should show your new commit!
 
 ![First Commit](/blog/images/github-tutorial/first-commit.png)
 
+If are working on a solo project and just want some basic version control, these steps should be all you need to get started. Every time you want to save a snapshot of your work, simply add to the staging area with with `git add .`, commit with `git commit -m "example commit"`, and then push to Github with `git push`.
 
-<!-- # Bigger projects
-git checkout -b branch_name
-git checkout
-git reset HEAD^
-
-# Big Company Projects
-git rebase -i
-git rebase -i [HEAD~n] -->
+In the next part, we'll explore features of Git that make collaboration easy, such as branching, as well as ways to undo your mistakes through reverting.

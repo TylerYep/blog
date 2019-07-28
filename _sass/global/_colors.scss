@@ -38,7 +38,7 @@ $orange-color:     #f66a0a !default;
 
 // Dark color scheme with a blue background
 .colors-blue-dark {
-  background: $light-blue-600;
+  background: $light-blue-600; // #33ba30;
   color: $light-blue-200;
   a, a:visited {
     color: $gray-200;
