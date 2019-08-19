@@ -11,7 +11,7 @@ I'm starting this blog as I enter my senior year at Stanford University. I'm hop
 
 # Why Keep a Blog?
 
-I debated for a long time whether making a blog was worthwhile. I'm not really obsessed with the idea of having a ton of followers or maintaining a large reader-base, and I haven't done anything especially revolutionary in the first 20 years of my life. I'm just a regular person going through my life. Thinking about it, I not sure I would enjoy fame, to be noticed on the street by people I've never met. Sounds uncomfortable.
+I debated for a long time whether making a blog was worthwhile. I'm not obsessed with the idea of having a ton of followers or maintaining a large reader-base, and I haven't really done anything revolutionary in the first 20 years of my life. I'm just a regular person. Thinking about it, I don't think I would enjoy fame, to be noticed on the street by people I've never met. Sounds uncomfortable.
 
 **So why keep a blog? What's the purpose of making my thoughts public, and writing posts about what I'm up to, if I don't want the public image?**
 

@@ -67,7 +67,6 @@ After running this command, going back to the Github page for this repository sh
 ![First Commit](/blog/images/github-tutorial/first-commit.png)
 
 # Summary
-
 If are working on a solo project and just want some basic version control, these steps should be all you need to get started. Every time you want to save a snapshot of your work, simply add to the staging area with with `git add .`, commit with `git commit -m "example commit"`, and then push to Github with `git push`!
 
 In the next part, we'll explore features of Git that make collaboration easy, such as **branching**, as well as ways to undo your mistakes through **reverting**.
