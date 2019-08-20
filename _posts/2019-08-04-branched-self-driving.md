@@ -33,7 +33,7 @@ The simulator was originally designed to solve the lane-following problem - to s
 <center><i>Modified Udacity Simulator</i></center><br>
 
 # Intersection Track
-The
+The custom track we designed comprises of a grid-world of identical intersections, with the only difference in each one the trees and hills in the background. We trained our model in this world by simply driving around the world and noting the keypress whenever we were about to take a certain action.
 
 # Nvidia's Conditioned Model
 
