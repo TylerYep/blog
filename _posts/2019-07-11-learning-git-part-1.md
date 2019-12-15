@@ -13,7 +13,7 @@ This tutorial requires you to have signed up on Github and downloaded Git (there
 The first step is to create a repository on Github to contain all of your files. Think of this as a Google Drive folder - this is a space where you can upload all of your files in order to keep them up to date.
 
 ![Creating the repository](/blog/images/github-tutorial/create-repo.png)
-<center><i>Make sure you select "Initialize this repository with a README".</i></center><br>
+<center><i>Make sure you select "Initialize this repository with a README".</i></center><br />
 
 You will now come to a landing page with your empty repository. The next step is to create a local copy of this repository on your local machine. Go to your command line and type:
 
@@ -22,14 +22,16 @@ You will now come to a landing page with your empty repository. The next step is
 If your repository is named differently, you can find the url on the repo homepage:
 
 ![Repository](/blog/images/github-tutorial/repo.png)
-<center><i>You can click the clipboard icon in order to easily copy+paste the repo url.</i></center><br>
+<center class="caption"><i>
+You can click the clipboard icon in order to easily copy+paste the repo url.
+</i></center><br />
 
 This will create a copy of the contents of the repository onto your computer. You should see a folder on your computer with a README.md file.
 
 Now, an important distinction: there are now TWO copies of your files. One is the **local version**, which we will work on and make changes to. The other is an **origin version**, which exists on the Github servers. Once we make our changes to the local copy, we will push it up to the Github servers to store in the **origin**.
 
 ![How Github Works](/blog/images/github-tutorial/github.png)
-<center><i>Quick diagram of origin vs local copy.</i></center><br>
+<center class="caption"><i>Quick diagram of origin vs local copy.</i></center><br />
 
 # Making Changes
 Let's make some changes to our repository. Go make some changes to *README.md* and add some extra files to the folder. Now, let's pretend we are now ready to save our work. First, let's see an overview of our changes. In the command line, type:

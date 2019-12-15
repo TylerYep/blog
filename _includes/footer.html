@@ -1,26 +1,19 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-  <div class="wrapper">
-    <div class="footer-col-wrapper">
-      <div class="footer-col one-half">
-        <h2 class="footer-heading">{{ site.title | escape }}</h2>
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
-      <div class="footer-col one-half">
-        <p class="footer-description">{{- site.description | escape -}}</p>
-      </div>
-      <div class="social-links">
-        {%- include social.html -%}
-      </div>
-    </div>
-  </div>
+{%- assign social = site.social_links -%}
+<footer>
+  <section id="footer">
+    <ul class="icons">
+      <li><a href="https://www.facebook.com/{{ social.facebook }}" title="{{ social.facebook }}"
+          class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+      <li><a href="https://www.linkedin.com/in/{{ social.linkedin }}" title="{{ social.linkedin }}"
+          class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+      <li><a href="https://github.com/{{ social.github }}" title="{{ social.github }}"
+          class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+      <li><a href="https://www.instagram.com/{{ social.instagram }}" title="{{ social.instagram }}"
+          class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+      <li><a href="#" title="Resume" class="icon solid alt fa-file-alt"><span class="label">Resume</span></a></li>
+    </ul>
+    <ul class="copyright">
+      <li>&copy; Tyler Yep</li>
+    </ul>
+  </section>
 </footer>

@@ -7,10 +7,14 @@ date: 2019-07-28
 # Introduction
 This is part 2 of my practical guide to using Git and Github. This part covers some more advanced topics related to collaborating with others. If you are completely new to Git and Github, I would recommend reading the previous part: [Learning Git, Part 1]({{ post.url | relative_url }}/blog/learning-git-part-1)
 
-## Recap
+# Recap
 Last part, we described a simple workflow you can do on your cloned project:
 
-`git add <new_file>` → `git commit -m "..."` → `git push`
+→ `git add <new_file>` 
+
+→ `git commit -m "..."` 
+
+→ `git push`
 
 These commands add your changes to a staging area, commits them, and then pushes your changes up to origin, which is stored in the cloud.
 
@@ -51,4 +55,3 @@ However, there are a few downsides to merging all the time. For example, your co
 We would much rather our commit history look something like this:
 
 ![Better!!](/blog/images/github-tutorial/git-branch.png)
-
