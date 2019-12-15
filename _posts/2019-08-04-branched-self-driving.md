@@ -25,12 +25,12 @@ This means that it is not enough for a car to be able to predict the action for 
 To simulate our solution to the problem, we adapted the Udacity Self-Driving Car Simulator, built for Udacity's Self-Driving Nano-degree course. The vanilla simulator provides a simple interface to drive the car and save a recording. The recordings are saved as a series of RGB images along with labels of the current throttle and steer angle.
 
 ![Modified Udacity Simulator](/blog/images/self-driving/simulator.png)
-<center><i>Modified Udacity Simulator</i></center><br>
+*Modified Udacity Simulator*
 
 The simulator was originally designed to solve the lane-following problem - to see if students could create a model to follow a simple road and train the car to stay within its lane. We built on top of the basic lane-following model in order to accomplish our new task. Below, we see the original Lake Track provided by the simulator, and compare it to the custom Intersection Track we built from scratch to provide a testing environment for our model.
 
 ![Lake Track](/blog/images/self-driving/lake.png) ![Intersection Track](/blog/images/self-driving/intersection.png)
-<center><i>Modified Udacity Simulator</i></center><br>
+*Modified Udacity Simulator*
 
 # Intersection Track
 The custom track we designed comprises of a grid-world of identical intersections. The only difference between the intersections is the trees and hills in the background. We trained our model in this world by simply driving around the world and noting the keypress whenever we were about to take a certain action.

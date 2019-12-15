@@ -5,7 +5,7 @@ summary: Branching, Reverting, and Merging vs. Rebasing.
 date: 2019-07-28
 ---
 # Introduction
-This is part 2 of my practical guide to using Git and Github. This part covers some more advanced topics related to collaborating with others. If you are completely new to Git and Github, I would recommend reading the previous part: [Learning Git, Part 1]({{ post.url | relative_url }}/blog/learning-git-part-1)
+This is Part 2 of my practical guide to using Git and Github. This part covers some more advanced topics related to collaborating with others. If you are completely new to Git and Github, I would recommend reading the previous part: [Learning Git, Part 1]({{ post.url | relative_url }}/blog/learning-git-part-1)
 
 # Recap
 Last part, we described a simple workflow you can do on your cloned project:
