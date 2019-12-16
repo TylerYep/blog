@@ -17,12 +17,11 @@ description: >- # this means to ignore newlines until the next setting ("url:")
   Deep Learning, Web Dev, and lots more fun!
 url: "https://www.tyleryep.com" # base hostname & protocol for your site, e.g. http://tyler.com
 baseurl: "/blog" # subpath of your site, e.g. /blog
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
 
 # Includes an icon in the footer for each username you enter
 social_links:
   email: tyep10
-  facebook: zephyrnx
+  facebook: ty
   github: tyleryep
   instagram: tyleryep
   linkedin: tyleryep
@@ -41,11 +40,11 @@ permalink: /:title/
 # The release of Jekyll Now that you're using
 version: v4.0.0
 
-# Jekyll 3 now only supports Kramdown for Markdown
+# Jekyll 4 now only supports Kramdown for Markdown
 kramdown:
   # Use GitHub flavored markdown, including triple backtick fenced code blocks
   input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+  # Jekyll 4 and GitHub Pages now only support rouge for syntax highlighting
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     # Use existing pygments syntax highlighting css
