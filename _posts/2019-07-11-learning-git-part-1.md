@@ -5,7 +5,7 @@ summary: A Practical Introduction to Git and Github.
 date: 2019-07-11
 ---
 # Introduction
-This is a practical guide to using Git and Github. I struggled a lot when I first started learning how to use Git, and this is the guide I wish I had when I first started. This guide reflects my current, constantly evolving workflow, and I hope this guide will evolve with it. I hope this step-by-step story helps you manage your code better and gives you a good sense of how to navigate version control.
+This is a practical guide to using Git and Github. I struggled a lot when I first started learning how to use Git, so this is the guide I wish I had when I first started. This guide reflects my current (but constantly evolving) workflow. I hope this step-by-step story helps you manage your code better and gives you a good sense of how to navigate version control.
 
 This tutorial requires you to have signed up on Github and downloaded Git (there are plenty of other tutorials explaining how to do this). This tutorial also assumes you have basic knowledge of moving around using the command line. Good luck!
 
@@ -15,7 +15,7 @@ The first step is to create a repository on Github to contain all of your files.
 ![Creating the repository](/blog/images/github-tutorial/create-repo.png)
 *Make sure you select "Initialize this repository with a README".*
 
-You will now come to a landing page with your empty repository. The next step is to create a local copy of this repository on your local machine. Go to your command line and type:
+You will get to a landing page with your empty repository. The next step is to create a local copy of this repository on your local machine. Go to your command line and type:
 
 `git clone https://github.com/<YOUR USERNAME>/learning-github.git`
 
@@ -26,7 +26,7 @@ If your repository is named differently, you can find the url on the repo homepa
 
 This will create a copy of the contents of the repository onto your computer. You should see a folder on your computer with a README.md file.
 
-Now, an important distinction: there are now TWO copies of your files. One is the **local version**, which we will work on and make changes to. The other is an **origin version**, which exists on the Github servers. Once we make our changes to the local copy, we will push it up to the Github servers to store in the **origin**.
+Now, an important distinction: there are now TWO copies of your files. One is the **local version**, which we will work on and make changes to. The other is an **origin version**, which exists on the Github servers. Once we make changes to the local copy, we will push it up to the Github servers to store in the **origin**.
 
 ![How Github Works](/blog/images/github-tutorial/github.png)
 *Quick diagram of origin vs local copy.*
