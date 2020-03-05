@@ -13,6 +13,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Tyler Yep
 email: tyep10@gmail.com
+author: Tyler Yep
 description: >- # this means to ignore newlines until the next setting ("url:")
   Deep Learning, Web Dev, and lots more fun!
 url: "https://www.tyleryep.com" # base hostname & protocol for your site, e.g. http://tyler.com
@@ -39,16 +40,15 @@ permalink: /:title/
 ### JEKYLL CONFIG ###
 # The release of Jekyll Now that you're using
 version: v4.0.0
+highlighter: none
 
 # Jekyll 4 now only supports Kramdown for Markdown
 kramdown:
   # Use GitHub flavored markdown, including triple backtick fenced code blocks
   input: GFM
   # Jekyll 4 and GitHub Pages now only support rouge for syntax highlighting
-  syntax_highlighter: rouge
   syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
+      disable : true
 
 # Set the Sass partials directory, as we're using @imports
 sass:

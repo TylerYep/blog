@@ -10,7 +10,7 @@ This is a practical guide to using Git and Github. I struggled a lot when I firs
 This tutorial requires you to have signed up on Github and downloaded Git (there are plenty of other tutorials explaining how to do this). This tutorial also assumes you have basic knowledge of moving around using the command line. Good luck!
 
 # The Beginning: Your First Project
-The first step is to create a repository on Github to contain all of your files. Think of this as a Google Drive folder - this is a space where you can upload all of your files in order to keep them up to date.
+The first step is to create a repository on Github to contain all of your files. Think of this like a Google Drive folder - this is a place where you can upload all of your files in order to keep them up to date.
 
 ![Creating the repository](/blog/images/github-tutorial/create-repo.png)
 *Make sure you select "Initialize this repository with a README".*
@@ -38,7 +38,26 @@ Let's make some changes to our repository. Go make some changes to *README.md* a
 
 We should now see an overview like this. We can see the files we have modified/edited.
 
-![Git Status](/blog/images/github-tutorial/git-status.png)
+```git
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	otherfiles.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+<!-- ![Git Status](/blog/images/github-tutorial/git-status.png) -->
 
 Now, we want to specify these are the files that we want to save our progress on. This is called making a **commit**, which basically means saving the differences between the previous version and the current version. Let's add all of the current files to a **staging area**.
 
@@ -46,7 +65,19 @@ Now, we want to specify these are the files that we want to save our progress on
 
 *(You can also add files individually: `git add README.md`; `git add otherfiles.txt`)*
 
-![Git Add](/blog/images/github-tutorial/git-add.png)
+```git
+$ git add .
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   README.md
+	new file:   otherfiles.txt
+```
+<!-- ![Git Add](/blog/images/github-tutorial/git-add.png) -->
 
 This **staging area** contains all of the changes we want included in this commit. This is a helpful feature because we don't necessarily want all of our changes to be included in the new version. Once we have finalized the staging area (which you can verify with another `git status`), we can make a commit with a commit message:
 
@@ -54,13 +85,27 @@ This **staging area** contains all of the changes we want included in this commi
 
 At this point, it's a good idea to check that `git status` does not contain those changes anymore, and that typing `git log` shows the commit you just made.
 
-![Git Log](/blog/images/github-tutorial/git-log.png)
+```git
+$ git log
+commit e7d41bd330585a9f2640e0f153be828ff2fb000a (HEAD -> master)
+Author: Tyler Yep <tyep@stanford.edu>
+Date:   Sun Jul 21 01:49:54 2019 -0700
+
+    Make changes to README and add otherfiles
+
+commit 0ee09754a06287b652d550b2843e8b15d7518e6c (origin/master, origin/HEAD)
+Author: Tyler Yep <tyep@stanford.edu>
+Date:   Sat Jul 20 22:01:59 2019 -0700
+
+    Initial commit
+```
+<!-- ![Git Log](/blog/images/github-tutorial/git-log.png) -->
 
 At this point, we've successfully made a commit, and are now ready to push our changes to the Github servers to save. We can use the following command to send our changes up to the Github servers.
 
 `git push`
 
-*(Note: this command is an abbreviation for `git push origin master`. It is often better practice to type the entire command out so you push changes to the right place!)*
+*(Note: this command is an abbreviation for `git push origin master`. It is often a good idea to type the entire command out to ensure you push changes to the right place!)*
 
 After running this command, going back to the Github page for this repository should show your new commit!
 
