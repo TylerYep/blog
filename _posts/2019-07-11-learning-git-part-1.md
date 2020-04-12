@@ -57,8 +57,6 @@ Untracked files:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-<!-- ![Git Status](/blog/images/github-tutorial/git-status.png) -->
-
 Now, we want to specify these are the files that we want to save our progress on. This is called making a **commit**, which basically means saving the differences between the previous version and the current version. Let's add all of the current files to a **staging area**.
 
 `git add .`
@@ -77,7 +75,6 @@ Changes to be committed:
 	modified:   README.md
 	new file:   otherfiles.txt
 ```
-<!-- ![Git Add](/blog/images/github-tutorial/git-add.png) -->
 
 This **staging area** contains all of the changes we want included in this commit. This is a helpful feature because we don't necessarily want all of our changes to be included in the new version. Once we have finalized the staging area (which you can verify with another `git status`), we can make a commit with a commit message:
 
@@ -99,7 +96,6 @@ Date:   Sat Jul 20 22:01:59 2019 -0700
 
     Initial commit
 ```
-<!-- ![Git Log](/blog/images/github-tutorial/git-log.png) -->
 
 At this point, we've successfully made a commit, and are now ready to push our changes to the Github servers to save. We can use the following command to send our changes up to the Github servers.
 

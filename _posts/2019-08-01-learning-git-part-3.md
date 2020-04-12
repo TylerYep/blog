@@ -41,8 +41,8 @@ Okay, let's check what branch we're on:
 
 You can see that we have switched over to our new branch! This is a yet another version of our code that can be modified independently of the master branch version. If we are done experimenting with this feature, we can return back to the master branch with: `git checkout master`
 
-# Merging & Rebasing
-Alright, let's pretend that we did a bunch of work on our test-branch, and want to combine it with master! There are a few ways to do this. The easiest is to simply merge our test branch with master.
+# Merging Aside
+Merging is useful when you do a bunch of work on our test-branch, and want to combine it with master. There are a few ways to do this. The easiest is to simply use `git merge` to merge our test branch with master.
 
 In the command line, we can type: `git merge test-branch master`. In general, this command will be:
 

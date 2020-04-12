@@ -36,19 +36,6 @@ $ git stash pop
 
 Stashing is a process that temporarily hides all of your visible changes. This is really useful for when you want to temporarily hide all of your local changes, but still want to bring them back easily.
 
+If you run `git pull` again, you will now see that the pull will have succeeded, however you may be left with those pesky *merge conflicts* from before!
 
 
-# Merging
-Alright, let's pretend that we did a bunch of work on our test-branch, and want to combine it with master! There are a few ways to do this. The easiest is to simply merge our test branch with master.
-
-In the command line, we can type: `git merge test-branch master`. In general, this command will be:
-
-`git merge <branch-we-want-to-merge> <final-output-branch>`
-
-However, there are a few downsides to merging all the time. For example, your commit history (using `git log`) may start to look like this:
-
-![Ouch.](/blog/images/github-tutorial/git-branch.png)
-
-We would much rather our commit history look something like this:
-
-![Better!!](/blog/images/github-tutorial/git-branch.png)
