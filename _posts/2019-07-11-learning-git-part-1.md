@@ -5,7 +5,7 @@ summary: A Practical Introduction to Git and Github.
 date: 2019-07-11
 ---
 # Introduction
-This is a practical guide to using Git and Github. I struggled a lot when I first started learning how to use Git, so this is the guide I wish I had when I first started. This guide reflects my current (but constantly evolving) workflow. I hope this step-by-step story helps you manage your code better and gives you a good sense of how to navigate version control.
+This is my practical guide to using Git and Github. I struggled a lot when I first started learning how to use Git, so these are all the things I wish I knew when I first started. This guide reflects my current workflow, but there definitely might be better ones (please let me know!). I hope this step-by-step story helps you manage your code better and helps you navigate version control.
 
 This tutorial requires you to have signed up on Github and downloaded Git (there are plenty of other tutorials explaining how to do this). This tutorial also assumes you have basic knowledge of moving around using the command line. Good luck!
 

@@ -1,23 +1,13 @@
 ---
 layout: post
 title: Learning Git, Part 3
-summary: Branching, Reverting, and Merging vs. Rebasing.
+summary: Creating Branches & Reverting Changes
 date: 2019-07-28
 ---
 # Introduction
-This is Part 2 of my practical guide to using Git and Github. This part covers some more advanced topics related to collaborating with others. If you are completely new to Git and Github, I would recommend reading the previous part: [Learning Git, Part 1]({{ post.url | relative_url }}/blog/learning-git-part-1)
+This is Part 3 of my practical guide to using Git and Github. This part covers some more advanced topics related to collaborating with others. If you are completely new to Git and Github, I would recommend reading the previous part: [Learning Git, Part 1]({{ post.url | relative_url }}/blog/learning-git-part-1)
 
 # Recap
-Last part, we described a simple workflow you can do on your cloned project:
-
-→ `git add <new_file>`
-
-→ `git commit -m "..."`
-
-→ `git push`
-
-These commands add your changes to a staging area, commits them, and then pushes your changes up to origin, which is stored in the cloud.
-
 This works well when you're working on your own project, but what about if you are collaborating on a project with others? If you are working in any tech company, there are going to be tens to hundreds of people editing the same project at any given time. How do we manage these changes?
 
 # Branching
