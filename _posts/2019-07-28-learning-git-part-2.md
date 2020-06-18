@@ -2,10 +2,11 @@
 layout: post
 title: Learning Git, Part 2
 summary: Merging Changes via Pulling, Stashing, & Rebasing
+tags: GitHub Telephone
 date: 2019-07-28
 ---
 # Introduction
-This is Part 2 of my practical guide to using Git and Github. This part covers some topics related to collaborating with others. If you are completely new to Git and Github, I would recommend reading the previous part: [Learning Git, Part 1]({{ post.url | relative_url }}/blog/learning-git-part-1)
+This is Part 2 of my practical guide to using Git and GitHub. This part covers some topics related to collaborating with others. If you are completely new to Git and GitHub, I would recommend reading the previous part: [Learning Git, Part 1]({{ post.url | relative_url }}/blog/learning-git-part-1)
 
 # Recap
 Last part, we described a simple workflow you can do on your cloned project:

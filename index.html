@@ -8,6 +8,14 @@ layout: default
     {% for post in site.posts %}
     <article>
       <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <span>
+        {{ post.date | date: "%h %d %Y" }} •
+        {% for tag_name in post.tags %}
+          <a href="{{ "/" | relative_url }}/tag/{{ tag_name }}">
+            <code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>
+          </a>
+        {% endfor %}
+      </span>
       <p>{{ post.summary }}</p>
     </article>
     {% endfor %}
