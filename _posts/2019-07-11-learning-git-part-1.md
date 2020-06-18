@@ -18,7 +18,9 @@ The first step is to create a repository on GitHub to contain all of your files.
 
 You will get to a landing page with your empty repository. The next step is to create a local copy of this repository on your local machine. Go to your command line and type:
 
-`git clone https://github.com/<YOUR USERNAME>/learning-github.git`
+```git
+$ git clone https://github.com/<YOUR USERNAME>/learning-github.git
+```
 
 If your repository is named differently, you can find the url on the repo homepage:
 
@@ -35,7 +37,9 @@ Now, an important distinction: there are now TWO copies of your files. One is th
 # Making Changes
 Let's make some changes to our repository. Go make some changes to *README.md* and add some extra files to the folder. Now, let's pretend we are now ready to save our work. First, let's see an overview of our changes. In the command line, type:
 
-`git status`
+```git
+$ git status
+```
 
 We should now see an overview like this. We can see the files we have modified/edited.
 
@@ -60,9 +64,11 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 Now, we want to specify these are the files that we want to save our progress on. This is called making a **commit**, which basically means saving the differences between the previous version and the current version. Let's add all of the current files to a **staging area**.
 
-`git add .`
+```git
+$ git add .
+```
 
-*(You can also add files individually: `git add README.md`; `git add otherfiles.txt`)*
+*You can also add one file at a time: `git add README.md`; `git add otherfiles.txt`*
 
 ```git
 $ git add .
@@ -79,9 +85,11 @@ Changes to be committed:
 
 This **staging area** contains all of the changes we want included in this commit. This is a helpful feature because we don't necessarily want all of our changes to be included in the new version. Once we have finalized the staging area (which you can verify with another `git status`), we can make a commit with a commit message:
 
-`git commit -m "Add new features to the bork bork"`
+```git
+$ git commit -m "Add new features to the bork bork"
+```
 
-At this point, it's a good idea to check that `git status` does not contain those changes anymore, and that typing `git log` shows the commit you just made.
+At this point, it's a good idea to check that `git status` does not contain those changes anymore, and that typing `git log` shows the commit you've just made.
 
 ```git
 $ git log
@@ -100,9 +108,11 @@ Date:   Sat Jul 20 22:01:59 2019 -0700
 
 At this point, we've successfully made a commit, and are now ready to push our changes to the GitHub servers to save. We can use the following command to send our changes up to the GitHub servers.
 
-`git push`
+```git
+$ git push
+```
 
-*(Note: this command is an abbreviation for `git push origin master`. It is often a good idea to type the entire command out to ensure you push changes to the right place!)*
+*(Note: this command is an abbreviation for `git push origin master`. It is a good idea to type the entire command to ensure you push changes to the right place!)*
 
 After running this command, going back to the GitHub page for this repository should show your new commit!
 

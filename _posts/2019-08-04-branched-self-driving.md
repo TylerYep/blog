@@ -72,7 +72,7 @@ Finally, we tried the same branching architecture using ResNet-18 and ResNet-34,
 To further analyze our network, we looked at activation maps and adversarial examples.
 
 ## Activation Maps
-Activation maps were crucial for ensuring our network is properly learning. For a long time, our network was giving us terrible results but a low MSE. We realized that we were using torch.view(...) instead of torch.permute(...).   :(
+Activation maps were crucial for ensuring our network is properly learning. For a long time, our network was giving us terrible results but a low MSE. We realized that we were using torch.view(...) instead of torch.permute(...).   ☹
 
 ![Activation Maps](/blog/images/self-driving/activation_maps.png)
 *Activation Maps*
