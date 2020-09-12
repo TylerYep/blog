@@ -2,6 +2,7 @@
 layout: post
 title: Self-Driving with High Level Commands
 summary: Branched Architecture Self-Driving using Imitation Learning
+tags: AI ML Self-Driving Python
 date: 2019-08-04
 ---
 # Introduction
@@ -95,6 +96,6 @@ To create these adversarial examples, we began with an input image with a near-z
 Overall, we found that our final ResNet18-Branched model drove the most smoothly and safely based on our evaluation metrics (# of curb collisions, drifts out of lane, etc.). In our simulator, the model with a branched architecture successfully navigates intersections in our grid world using high-level controls, which showcases our model’s ability to imitate expert driving and learn the correct starting and stopping times for maneuvers without any temporal information.
 
 You can find our code at:
-[Github Repo](https://github.com/TylerYep/self-driving)
-[Udacity Self-Driving Simulator](https://github.com/udacity/self-driving-car-sim)
-[Our Upgraded Self-Driving Simulator](https://github.com/TylerYep/self-driving-sim)
+- [BASIL Github Repo](https://github.com/TylerYep/self-driving)
+- [Original Udacity Self-Driving Simulator](https://github.com/udacity/self-driving-car-sim)
+- [Modified Self-Driving Simulator](https://github.com/TylerYep/self-driving-sim)

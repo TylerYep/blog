@@ -41,8 +41,69 @@ In the command line, we can type: `git merge test-branch master`. In general, th
 
 However, there are a few downsides to merging all the time. For example, your commit history (using `git log`) may start to look like this:
 
-![Ouch.](/blog/images/github-tutorial/git-branch.png)
+```git
+commit 45d08300871f4ad239601072b850009daf61da42 (HEAD -> master)
+Merge: dfddd52 0925c96
+Author: Tyler Yep <tyep@cs.stanford.edu>
+Date:   Sat Sep 12 12:27:08 2020 -0700
+
+    Merge branch 'master' of https://github.com/TylerYep/learning-github
+
+commit 0925c96c100a03a0bb8f0ade52ae933577688854 (origin/master, origin/HEAD)
+Author: Tyler Yep <tyep@cs.stanford.edu>
+Date:   Sat Sep 12 12:25:53 2020 -0700
+
+    Update otherfiles.txt with correct header
+
+commit 54911a03b0d16d56c67ff707d834f1fbb461da56
+Merge: dfdee61 023dc71
+Author: Tyler Yep <tyep@cs.stanford.edu>
+Date:   Thu Aug 22 21:16:18 2019 -0400
+
+    Merge branch 'master' of https://github.com/TylerYep/learning-github
+
+commit dfddd5250b1a6c63a4891e1e4524ad6ad7134e67
+Author: Tyler Yep <tyep@cs.stanford.edu>
+Date:   Sat Sep 12 12:24:01 2020 -0700
+
+    oops
+
+commit 2778b752158446b7cc18bb51a89a43d6091379db
+Author: Tyler Yep <tyep@cs.stanford.edu>
+Date:   Sat Sep 12 12:23:50 2020 -0700
+
+    Fix off-by-one bug in phantom generator
+
+commit e7d41bd330585a9f2640e0f153be828ff2fb000a
+Author: Tyler Yep <tyep@stanford.edu>
+Date:   Sun Jul 21 01:49:54 2019 -0700
+
+    Make changes to README and add otherfiles
+
+```
+
+The above log has many unnecessary merges that cause our output to look messy. Also, merges can make it difficult to revert back to those commits later.
 
 We would much rather our commit history look something like this:
 
-![Better!!](/blog/images/github-tutorial/git-branch.png)
+```git
+
+commit 0925c96c100a03a0bb8f0ade52ae933577688854 (origin/master, origin/HEAD)
+Author: Tyler Yep <tyep@cs.stanford.edu>
+Date:   Sat Sep 12 12:25:53 2020 -0700
+
+    Update otherfiles.txt with correct header
+
+commit 2778b752158446b7cc18bb51a89a43d6091379db
+Author: Tyler Yep <tyep@cs.stanford.edu>
+Date:   Sat Sep 12 12:23:50 2020 -0700
+
+    Fix off-by-one bug in phantom generator
+
+commit e7d41bd330585a9f2640e0f153be828ff2fb000a
+Author: Tyler Yep <tyep@stanford.edu>
+Date:   Sun Jul 21 01:49:54 2019 -0700
+
+    Make changes to README and add otherfiles
+
+```

@@ -17,6 +17,7 @@ author: Tyler Yep
 description: >- # this means to ignore newlines until the next setting ("url:")
   Deep Learning, Web Dev, and lots more fun!
 url: "https://www.tyleryep.com" # base hostname & protocol for your site, e.g. http://tyleryep.com
+baseurl: "/blog"
 
 # Includes an icon in the footer for each username you enter
 social_links:

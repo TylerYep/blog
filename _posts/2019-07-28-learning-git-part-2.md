@@ -2,7 +2,7 @@
 layout: post
 title: Learning Git, Part 2
 summary: Merging Changes via Pulling, Stashing, & Rebasing
-tags: GitHub Telephone
+tags: GitHub
 date: 2019-07-28
 ---
 # Introduction
