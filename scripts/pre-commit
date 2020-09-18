@@ -3,6 +3,7 @@
 echo "Running pre-commit hook"
 
 python util/tag_generator.py
+git add .
 
 # $? stores exit value of the last command
 if [ $? -ne 0 ]; then

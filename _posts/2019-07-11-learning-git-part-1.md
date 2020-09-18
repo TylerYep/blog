@@ -121,4 +121,4 @@ After running this command, going back to the GitHub page for this repository sh
 # Summary
 If are working on a solo project and just want some basic version control, these steps should be all you need to get started. Every time you want to save a snapshot of your work, simply add to the staging area with with `git add .`, commit with `git commit -m "example commit"`, and then push to GitHub with `git push`!
 
-In the next part, we'll explore features of Git that make collaboration easy, such as **branching**, as well as ways to undo your mistakes through **reverting**.
+In the next part, we'll go over techniques for pulling in changes in a larger project from your collaborators, and the concept of rebasing.

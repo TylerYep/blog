@@ -1,5 +1,6 @@
 ---
 layout: page
+comments: true
 ---
 <div class="post">
   <section class="post-body">
@@ -18,6 +19,4 @@ layout: page
     {% endif %}
   </div>
 </div>
-{%- if site.disqus.shortname -%}
-  {%- include disqus_comments.html -%}
-{%- endif -%}
+{%- include disqus_comments.html -%}

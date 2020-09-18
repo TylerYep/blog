@@ -85,4 +85,10 @@ Once you finish fixing all of the merge conflicts, we're done! We've successfull
 ## Summary
 If you are working on a project with a team, Git provides an easy way to commit and merge changes from a remote repository with the working, in-progress version of your work. To pull in changes, first think about what you've added since the last pull using `git status`. Then, choose one of the options of pulling in changes we discussed above.
 
-In the next part, we'll go over techniques for making changes or features in a larger project, via branching.
+If you like this workflow, you might consider automatically rebasing whenever you run `git pull`, using this command:
+
+```git
+$ git config --global pull.rebase true
+```
+
+In the next part, we'll explore features of Git that make collaboration easy, such as **branching**, as well as ways to undo your mistakes through **reverting**.

@@ -13,7 +13,7 @@ I'm starting this blog as I enter my senior year at Stanford University. I'm hop
 # This Blog Contains:
 Notes to remember what I've worked on.
 
-Tutorials on subjects I've spent so many hours trying to understand, to help me remember all of that work and use it in the future.
+Tutorials on subjects I've spent so many hours trying to understand, to help me remember all of my work and use it in the future.
 
 Every post will be a mini-snapshot of my understanding at these different years of my life, showing what I've learned over my various projects. Hopefully it'll be a chance for me to get some feedback on my work and learn something new.
 
