@@ -4,6 +4,7 @@ title: Self-Driving with High Level Commands
 summary: Branched Architecture Self-Driving using Imitation Learning
 tags: AI ML Self-Driving Python
 date: 2019-08-04
+comments: true
 ---
 # Introduction
 I took CS 231N: Convolutional Neural Networks for Visual Recognition during the Spring quarter of my 3rd year at Stanford, and had the opportunity to work on a project with my friend Woody.

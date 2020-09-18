@@ -4,6 +4,7 @@ title: Learning Git, Part 3
 summary: Creating Branches & Reverting Changes
 tags: GitHub
 date: 2019-07-28
+comments: true
 ---
 # Introduction
 This is Part 3 of my practical guide to using Git and GitHub. This part covers some more advanced topics related to collaborating with others. If you are completely new to Git and GitHub, I would recommend reading the previous part: [Learning Git, Part 1]({{ post.url | relative_url }}/blog/learning-git-part-1)

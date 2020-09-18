@@ -4,6 +4,7 @@ title: Learning Git, Part 1
 summary: A Practical Introduction to Git and GitHub.
 tags: GitHub
 date: 2019-07-11
+comments: true
 ---
 # Introduction
 This is my practical guide to using Git and GitHub. I struggled a lot when I first started learning how to use Git, so these are all the things I wish I knew when I first started. This guide reflects my current workflow, but there definitely might be better ones (please let me know!). I hope this step-by-step story helps you manage your code better and helps you navigate version control.
