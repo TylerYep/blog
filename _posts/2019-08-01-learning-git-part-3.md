@@ -6,16 +6,20 @@ tags: GitHub
 date: 2019-07-28
 comments: true
 ---
+
 # Introduction
+
 This is Part 3 of my practical guide to using Git and GitHub. This part covers some more advanced topics related to collaborating with others. If you are completely new to Git and GitHub, I would recommend reading the previous part: [Learning Git, Part 1]({{ post.url | relative_url }}/blog/learning-git-part-1)
 
 # Recap
+
 This works well when you're working on your own project, but what about if you are collaborating on a project with others? If you are working in any tech company, there are going to be tens to hundreds of people editing the same project at any given time. How do we manage these changes?
 
 # Branching
-**Branches** are separate versions of your code. Think of a branch as an experimental feature, or some changes you are working on that shouldn't interact with other changes. This is especially useful if you are working on a team and don't want other people to interfere with your work. With a branch, you can work in isolation until you are ready to rejoin the master branch.
 
-The **master branch** is usually the final, master copy of the code. All branches eventually merge into the master branch once their work is finished.
+**Branches** are separate versions of your code. Think of a branch as an experimental feature, or some changes you are working on that shouldn't interact with other changes. This is especially useful if you are working on a team and don't want other people to interfere with your work. With a branch, you can work in isolation until you are ready to rejoin the main branch.
+
+The **main branch** is usually the final, primary copy of the code. All branches eventually merge into the main branch once their work is finished.
 
 ![Git Branch](/blog/images/github-tutorial/branch.svg)
 
@@ -31,26 +35,27 @@ Okay, let's check what branch we're on:
 
 ![Check what branch you are on with `git branch`](/blog/images/github-tutorial/git-branch.png)
 
-You can see that we have switched over to our new branch! This is a yet another version of our code that can be modified independently of the master branch version. If we are done experimenting with this feature, we can return back to the master branch with: `git checkout master`
+You can see that we have switched over to our new branch! This is a yet another version of our code that can be modified independently of the main branch version. If we are done experimenting with this feature, we can return back to the main branch with: `git checkout main`
 
 # Merging Aside
-Merging is useful when you do a bunch of work on our test-branch, and want to combine it with master. There are a few ways to do this. The easiest is to simply use `git merge` to merge our test branch with master.
 
-In the command line, we can type: `git merge test-branch master`. In general, this command will be:
+Merging is useful when you do a bunch of work on our test-branch, and want to combine it with main. There are a few ways to do this. The easiest is to simply use `git merge` to merge our test branch with main.
+
+In the command line, we can type: `git merge test-branch main`. In general, this command will be:
 
 `git merge <branch-we-want-to-merge> <final-output-branch>`
 
 However, there are a few downsides to merging all the time. For example, your commit history (using `git log`) may start to look like this:
 
 ```git
-commit 45d08300871f4ad239601072b850009daf61da42 (HEAD -> master)
+commit 45d08300871f4ad239601072b850009daf61da42 (HEAD -> main)
 Merge: dfddd52 0925c96
 Author: Tyler Yep <tyep@cs.stanford.edu>
 Date:   Sat Sep 12 12:27:08 2020 -0700
 
-    Merge branch 'master' of https://github.com/TylerYep/learning-github
+    Merge branch 'main' of https://github.com/TylerYep/learning-github
 
-commit 0925c96c100a03a0bb8f0ade52ae933577688854 (origin/master, origin/HEAD)
+commit 0925c96c100a03a0bb8f0ade52ae933577688854 (origin/main, origin/HEAD)
 Author: Tyler Yep <tyep@cs.stanford.edu>
 Date:   Sat Sep 12 12:25:53 2020 -0700
 
@@ -61,7 +66,7 @@ Merge: dfdee61 023dc71
 Author: Tyler Yep <tyep@cs.stanford.edu>
 Date:   Thu Aug 22 21:16:18 2019 -0400
 
-    Merge branch 'master' of https://github.com/TylerYep/learning-github
+    Merge branch 'main' of https://github.com/TylerYep/learning-github
 
 commit dfddd5250b1a6c63a4891e1e4524ad6ad7134e67
 Author: Tyler Yep <tyep@cs.stanford.edu>
@@ -89,7 +94,7 @@ We would much rather our commit history look something like this:
 
 ```git
 
-commit 0925c96c100a03a0bb8f0ade52ae933577688854 (origin/master, origin/HEAD)
+commit 0925c96c100a03a0bb8f0ade52ae933577688854 (origin/main, origin/HEAD)
 Author: Tyler Yep <tyep@cs.stanford.edu>
 Date:   Sat Sep 12 12:25:53 2020 -0700
 

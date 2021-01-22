@@ -5,12 +5,15 @@ summary: Why keep a blog?
 tags: Thoughts
 date: 2019-07-01
 ---
+
 # Introduction
+
 Hi, I'm Tyler, and this is my blog!
 
 I'm starting this blog as I enter my senior year at Stanford University. I'm hoping to write about the things I've worked on over the past four years, and what I continue to do in the future.
 
 # This Blog Contains:
+
 Notes to remember what I've worked on.
 
 Tutorials on subjects I've spent so many hours trying to understand, to help me remember all of my work and use it in the future.

@@ -12,12 +12,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Tyler Yep
-email: tyep10@gmail.com
+email: tyep@cs.stanford.edu
 author: Tyler Yep
 description: >- # this means to ignore newlines until the next setting ("url:")
   Deep Learning, Web Dev, and lots more fun!
-url: "https://www.tyleryep.com" # base hostname & protocol for your site, e.g. http://tyleryep.com
-baseurl: "/blog"
+url: 'https://www.tyleryep.com' # base hostname & protocol for your site
+baseurl: '/blog'
 
 # Includes an icon in the footer for each username you enter
 social_links:
@@ -48,7 +48,7 @@ kramdown:
   input: GFM
   # Jekyll 4 and GitHub Pages now only support rouge for syntax highlighting
   syntax_highlighter_opts:
-      disable : true
+    disable: true
 
 # Set the Sass partials directory, as we're using @imports
 sass:
